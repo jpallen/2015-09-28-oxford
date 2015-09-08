@@ -1,17 +1,17 @@
 ---
 layout: workshop
 root: .
-venue: Oxford      # brief name of host site
-address: Environmental Research Doctoral Training Program    # street address of home location
+venue: University of Oxford, Environmental Research DTP    # brief name of host site
+address: Department of Zoology, South Parks Road, OX1 3PS    # street address of home location
 country: United-Kingdom    # country (hyphenated if need be, like 'United-Kingdom')
 language: en   # language code like 'en' or 'fr'
-latlng: FIXME     # fractional latitude and longitude like 41.7901128,-87.6007318
+latlng: 51.7590106,-1.2511766  # fractional latitude and longitude like 41.7901128,-87.6007318
 humandate: Sept 28-29, 2015  # use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: 9:00am - 5.00pm  # use the format '9:00 am - 4:30 pm' (without the quotes)
+humantime: 9:00am - 4.30pm  # use the format '9:00 am - 4:30 pm' (without the quotes)
 startdate: 2015-09-28  # use YYYY-MM-DD format like 2015-01-01
 enddate: 2015-08-29    # use YYYY-MM-DD format like 2015-01-02
 instructor: ["James Allen", "David Pugh"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TDB"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Duncan Watson-Parris", "Sebastian Engelstaedter "]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: jamesallen0108@gmail.com    # contact email address for workshop organizer
 etherpad:   # optional (insert the URL for your Etherpad if you're using one)
 ---
@@ -144,22 +144,28 @@ etherpad:   # optional (insert the URL for your Etherpad if you're using one)
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>10:30</td>  <td><em>Coffee</em></td> </tr>
+      <tr> <td>10:45</td>  <td>Unix shell (part 2)</td> </tr>
+      <tr> <td>12:00</td>  <td><em>Lunch break</em></td> </tr>
       <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>14:30</td>  <td><em>Coffee</em></td> </tr>
+      <tr> <td>14:45</td>  <td>Python (part 2)</td> </tr>
+      <tr> <td>16:15</td>  <td>Wrap Up</td> </tr>
+      <tr> <td>16:30</td>  <td>Finish for the day</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>10:30</td>  <td><em>Coffee</em></td> </tr>
+      <tr> <td>10:45</td>  <td>Git (part 2)</td> </tr>
+      <tr> <td>12:00</td>  <td><em>Lunch break</em></td> </tr>
       <tr> <td>13:00</td>  <td>More Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>14:30</td>  <td><em>Coffee</em></td> </tr>
+      <tr> <td>14:45</td>  <td>More Python (part 2)</td> </tr>
+      <tr> <td>16:15</td>  <td>Wrap Up</td> </tr>
+      <tr> <td>16:30</td>  <td>Finish for the day</td> </tr>
     </table>
   </div>
 </div>
@@ -261,12 +267,6 @@ etherpad:   # optional (insert the URL for your Etherpad if you're using one)
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>More Python</h3>
-    <ul>
-      <li>TBD...</li>
     </ul>
   </div>
 </div>
@@ -549,43 +549,6 @@ etherpad:   # optional (insert the URL for your Etherpad if you're using one)
   which has instructions on how to test that everything was installed correctly.
   </p>
 </div> <!-- End of 'Python' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
